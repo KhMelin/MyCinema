@@ -1,0 +1,23 @@
+.NotFound {
+    width: 75%;
+    height: 60vh;
+    margin: 10px auto;
+}
+
+
+.NotFound h2 {
+    color: #fff !important;
+    font-size: 30px;
+    text-align: center;
+}
+
+.NotFound .btn {
+    background: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.NotFound .btn:hover {
+    color:red;
+}
+

@@ -1,0 +1,95 @@
+footer
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-self: center;
+    justify-items: center;
+    border-top: 2px solid var(--darkGray);
+    margin-top: 50px;
+    padding: 50px 0px 50px 0px;
+    position: relative;
+}
+footer h3
+{
+    font-size: 20px;
+    opacity: .9;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+footer .footer__navlinks .navlink-box
+{
+    display: flex;
+    gap: 10px;
+}
+footer .footer__navlinks .navlink-box a, .category-box a
+{
+    color: var(--white);
+    opacity: .6;
+}
+footer .footer__navlinks .navlink-box a:hover, .category-box a:hover
+{
+    opacity: 1;
+}
+.category-box
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact-box
+{
+    display: flex;
+    gap: 10px;
+}
+.contact-box a
+{
+    background: var(--darkGray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font: 20px;
+    border-radius: 50%;
+    transition: .3s ease-in;
+}
+.contact-box a i
+{
+    font-size: 18px;
+    color: var(--white);
+}
+.contact-box a:hover
+{
+    transform: scale(1.3);
+    transition: .7s;
+}
+.contact-box a:hover i {
+    transform: rotateY(360deg);
+    color: var(--red);
+    transition: 2s;
+}
+
+@media (max-width: 740px)
+{
+    footer
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__contact, footer .footer__navlinks
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__contact
+    {
+        margin-top: 30px;
+    }
+}
+@media (max-width: 840px) {
+    .footer__contact .contact-box
+    {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
